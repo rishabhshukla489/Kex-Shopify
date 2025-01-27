@@ -1,2 +1,3 @@
 # Kex-Shopify
-Shopify code for kex website
+Shopify code for kex website.
+Custome theme.
