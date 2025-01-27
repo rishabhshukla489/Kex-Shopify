@@ -1,0 +1,48 @@
+[
+    {
+      "name": "General Settings",
+      "settings": [
+        {
+          "type": "text",
+          "id": "store_tagline",
+          "label": "Store Tagline",
+          "default": "The Ultimate Comfort"
+        },
+        {
+          "type": "color",
+          "id": "primary_color",
+          "label": "Primary Color",
+          "default": "#333333"
+        },
+        {
+          "type": "font_picker",
+          "id": "font_family",
+          "label": "Font Family",
+          "default": "Roboto"
+        }
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Hero Background Image"
+        },
+        {
+          "type": "text",
+          "id": "hero_heading",
+          "label": "Hero Heading",
+          "default": "Get peak comfy-chic with new winter essentials."
+        },
+        {
+          "type": "text",
+          "id": "hero_cta",
+          "label": "Call to Action Button Text",
+          "default": "Shop Now"
+        }
+      ]
+    }
+  ]
+  
