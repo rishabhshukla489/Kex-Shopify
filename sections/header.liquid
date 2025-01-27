@@ -1,0 +1,16 @@
+<header>
+  <div class="logo">
+    <a href="{{ shop.url }}">
+      <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+    </a>
+  </div>
+  <nav>
+    {% for link in linklists.main-menu.links %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
+  </nav>
+  <form action="/search">
+    <input type="text" name="q" placeholder="Search">
+    <button type="submit">Search</button>
+  </form>
+</header>

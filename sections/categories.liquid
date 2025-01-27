@@ -1,0 +1,23 @@
+{% schema %}
+{
+  "name": "Category Section",
+  "blocks": [
+    {
+      "type": "category",
+      "settings": {
+        "image": { "type": "image_picker", "label": "Category Image" },
+        "title": { "type": "text", "label": "Category Title" },
+        "link": { "type": "url", "label": "Category Link" }
+      }
+    }
+  ]
+}
+{% endschema %}
+<div class="categories">
+  {% for block in section.blocks %}
+    <a href="{{ block.settings.link }}">
+      <img src="{{ block.settings.image | file_url }}" alt="{{ block.settings.title }}">
+      <span>{{ block.settings.title }}</span>
+    </a>
+  {% endfor %}
+</div>
